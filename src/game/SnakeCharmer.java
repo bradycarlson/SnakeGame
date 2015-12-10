@@ -111,7 +111,6 @@ public class SnakeCharmer extends JFrame
 		
 		setUpBoard();
 		initializeVariables();
-
 		makeMenu();
 		
 		Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
@@ -195,7 +194,7 @@ public class SnakeCharmer extends JFrame
 			scoreBoard.repaint();
 			
 			long delta = (System.nanoTime() - start) / 1000000L;
-			if(delta < FRAME_TIME) 
+			if (delta < FRAME_TIME) 
 			{
 				try 
 				{

@@ -75,7 +75,7 @@ public class GameBoard extends JPanel
 			} // end inner for
 		} // end outer for
 		
-		// draws cell contains based on type
+		// draws cell contents based on type
 		for(int x = 0; x < COLS; x++) 
 		{
 			for(int y = 0; y < ROWS; y++) 
@@ -89,7 +89,7 @@ public class GameBoard extends JPanel
 			} // end inner for
 		} // end outer for
 		
-		// draws text is game is over, the game is paused or it's a new game
+		// draws text if game is over, the game is paused or it's a new game
 		if(game.isGameOver() || game.isNewGame() || game.isGamePaused()) 
 		{	
 			g2.setColor(SnakeCharmer.lineColor);
@@ -133,8 +133,7 @@ public class GameBoard extends JPanel
 	 * @param g2 - 2DGraphics
 	 */
 	private void drawCell(int x, int y, CellType t, Graphics2D g2) 
-	{
-		
+	{	
 		switch(t)
 		{
 			case Food:
